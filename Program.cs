@@ -30,9 +30,9 @@ int[] Numbers(int num)
     return arr;
 }
 
-int count = 0;
 int Count(int[] arr)
 {
+    int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > 0)
@@ -49,6 +49,5 @@ int num = Convert.ToInt32(Console.ReadLine());
 int[] array = Numbers(num);
 PrintArray(array);
 
-Count(array);
-System.Console.WriteLine($"Положителных чисел в последовательности: {count}.");
+System.Console.WriteLine($"Положителных чисел в последовательности: {Count(array)}.");
 
